@@ -1,0 +1,8 @@
+Go Here: https://www.disneyplus.com/movies/9f7c38e5-41c3-47b4-b99e-b5b3d2eb95d4
+
+Run this in the chrome console
+
+const items = document.querySelectorAll( ".gv2-asset" );
+items.forEach( ( item ) => { console.log( item.childNodes[0].childNodes[0].getAttribute("alt") + " - " + item.getAttribute("data-gv2key") ) } );
+
+
