@@ -37,6 +37,7 @@ var last_update_time = "00:00:00";
 var current_time = "00:00:00";
 var time_remaining = "00:00:00";
 var websocket_client = false;
+var should_be_playing = false;
 
 // var svg_buttton_click_on_active = false;
 
@@ -210,6 +211,7 @@ function hook_control_buttons() {
 		channel: "disney_plus" ,
 		message: "agent_ready" ,
 	});
+	should_be_playing = true;
 }
 
 function init() {

@@ -1,0 +1,795 @@
+####################################
+#         System information       #
+####################################
+# Date:                   2020:06:10 
+# Time:                   04:19:09 
+# Xnee program:           cnee 
+# Xnee version:           3.19 
+# Xnee home:              http://www.gnu.org/software/xnee/ 
+# Xnee info mailing list: info-xnee@gnu.org 
+# Xnee bug mailing list:  bug-xnee@gnu.org 
+# X version:              11 
+# X revision:             0 
+# X vendor:               The X.Org Foundation 
+# X vendor release:       12008000 
+# Record version major:   1
+# Record version minor:   13
+# OS name:                Linux 
+# OS Release:             5.4.0-33-generic 
+# OS Version:             #37-Ubuntu SMP Thu May 21 12:53:59 UTC 2020 
+# Machine:                x86_64 
+# Nodename:               mediabox 
+# Display name:           :0
+# Dimension:              1920x1080
+
+
+
+##############################################
+#      Xnee application arguments            #
+##############################################
+#  cnee --record --mouse --keyboard -o cnee.data 
+
+
+##############################################
+#      Displays                              #
+##############################################
+# display :0
+# distribute
+
+
+##############################################
+#      Files                                 #
+##############################################
+# out-file cnee.data
+# err-file stderr
+
+
+##############################################
+#      Key Grabs                             #
+##############################################
+# stop-key         0
+# pause-key        0
+# resume-key       0
+# insert-key       0
+# exec-key         0
+# exec-program-key         xnee-exec-no-program
+
+
+##############################################
+#      Recording limits etc                  #
+##############################################
+
+events-to-record        -1
+data-to-record          -1
+seconds-to-record       -1
+# first-last
+
+# Record  all (including current) clients or only future ones
+all-clients
+# future-clients
+
+# Store the starting mouse position 
+# store-mouse-position
+
+
+##############################################
+#      Resolution                            #
+##############################################
+
+# Resolution
+#recorded-resolution  1920x1080
+#replay-resolution  1x1
+#resolution-adjustment  0
+
+
+##############################################
+#      Speed                                 #
+##############################################
+
+# Speed
+#speed-percent  100
+
+
+##############################################
+#      Replaying limits etc                  #
+##############################################
+
+max-threshold 20 
+min-threshold 20 
+tot-threshold 40 
+
+
+##############################################
+#      Feedback                              #
+##############################################
+#feedback-none
+#feedback-stderr
+feedback-xosd
+ 
+
+
+##############################################
+#      Various                               #
+##############################################
+
+# Plugin file 
+
+# Modes (currently not used)
+# synchronised-replay
+
+# Replay offset
+#replay-offset 0x0
+
+# Human printout of X11 data (instead of Xnee format)
+# human-printout  
+
+# Delay before starting record/replay
+# time 0
+
+# No recording of ReparentNotify
+# no-reparent-recording 
+
+# Various
+#########################################
+#          Record settings              #
+#########################################
+#   data_flags          7
+#   rState              0x560e494ea2b0
+#   xids[0]             3
+#   xids[1]             0
+# Number of Ranges      2
+# RecordRange[0]
+request-range            0-0
+reply-range                   0-0 
+extension-request-major-range  0-0 
+extension-request-minor-range  0-0 
+extension-reply-major-range   0-0
+extension-reply-minor-range   0-0 
+delivered-event-range         21-21 
+device-event-range            2-6 
+error-range                   0-0 
+# RecordRange[1]
+request-range            0-0
+reply-range                   0-0 
+extension-request-major-range  0-0 
+extension-request-minor-range  0-0 
+extension-reply-major-range   0-0
+extension-reply-minor-range   0-0 
+delivered-event-range         0-0 
+device-event-range            66-71 
+error-range                   0-0 
+7,6,1330,610,0,0,0,52286333,8,'PixArt USB Optical Mouse'
+7,6,1328,610,0,0,0,52286356,8,'PixArt USB Optical Mouse'
+7,6,1320,606,0,0,0,52286356,8,'PixArt USB Optical Mouse'
+7,6,1312,598,0,0,0,52286357,8,'PixArt USB Optical Mouse'
+7,6,1303,591,0,0,0,52286379,8,'PixArt USB Optical Mouse'
+7,6,1293,583,0,0,0,52286379,8,'PixArt USB Optical Mouse'
+7,6,1285,577,0,0,0,52286381,8,'PixArt USB Optical Mouse'
+7,6,1276,571,0,0,0,52286390,8,'PixArt USB Optical Mouse'
+7,6,1267,565,0,0,0,52286404,8,'PixArt USB Optical Mouse'
+7,6,1260,559,0,0,0,52286406,8,'PixArt USB Optical Mouse'
+7,6,1253,555,0,0,0,52286414,8,'PixArt USB Optical Mouse'
+7,6,1249,551,0,0,0,52286429,8,'PixArt USB Optical Mouse'
+7,6,1244,548,0,0,0,52286437,8,'PixArt USB Optical Mouse'
+7,6,1242,547,0,0,0,52286446,8,'PixArt USB Optical Mouse'
+7,6,1240,546,0,0,0,52286446,8,'PixArt USB Optical Mouse'
+7,6,1237,542,0,0,0,52286463,8,'PixArt USB Optical Mouse'
+7,6,1235,541,0,0,0,52286463,8,'PixArt USB Optical Mouse'
+7,6,1233,540,0,0,0,52286469,8,'PixArt USB Optical Mouse'
+7,6,1231,538,0,0,0,52286482,8,'PixArt USB Optical Mouse'
+7,6,1229,537,0,0,0,52286486,8,'PixArt USB Optical Mouse'
+7,6,1226,536,0,0,0,52286515,8,'PixArt USB Optical Mouse'
+7,6,1223,535,0,0,0,52286515,8,'PixArt USB Optical Mouse'
+7,6,1220,532,0,0,0,52286515,8,'PixArt USB Optical Mouse'
+7,6,1215,530,0,0,0,52286527,8,'PixArt USB Optical Mouse'
+7,6,1212,526,0,0,0,52286527,8,'PixArt USB Optical Mouse'
+7,6,1208,524,0,0,0,52286536,8,'PixArt USB Optical Mouse'
+7,6,1204,522,0,0,0,52286557,8,'PixArt USB Optical Mouse'
+7,6,1202,520,0,0,0,52286558,8,'PixArt USB Optical Mouse'
+7,6,1198,517,0,0,0,52286558,8,'PixArt USB Optical Mouse'
+7,6,1196,515,0,0,0,52286577,8,'PixArt USB Optical Mouse'
+7,6,1195,514,0,0,0,52286577,8,'PixArt USB Optical Mouse'
+7,6,1194,513,0,0,0,52286581,8,'PixArt USB Optical Mouse'
+7,6,1191,509,0,0,0,52286598,8,'PixArt USB Optical Mouse'
+7,6,1190,508,0,0,0,52286598,8,'PixArt USB Optical Mouse'
+7,6,1189,505,0,0,0,52286605,8,'PixArt USB Optical Mouse'
+7,6,1186,501,0,0,0,52286615,8,'PixArt USB Optical Mouse'
+7,6,1183,496,0,0,0,52286622,8,'PixArt USB Optical Mouse'
+7,6,1180,493,0,0,0,52286634,8,'PixArt USB Optical Mouse'
+7,6,1179,492,0,0,0,52286639,8,'PixArt USB Optical Mouse'
+7,6,1177,490,0,0,0,52286650,8,'PixArt USB Optical Mouse'
+7,6,1175,489,0,0,0,52286657,8,'PixArt USB Optical Mouse'
+7,6,1173,488,0,0,0,52286670,8,'PixArt USB Optical Mouse'
+7,6,1172,488,0,0,0,52286726,8,'PixArt USB Optical Mouse'
+7,6,1171,488,0,0,0,52286744,8,'PixArt USB Optical Mouse'
+7,6,1169,488,0,0,0,52286744,8,'PixArt USB Optical Mouse'
+7,6,1167,487,0,0,0,52286749,8,'PixArt USB Optical Mouse'
+7,6,1165,487,0,0,0,52286770,8,'PixArt USB Optical Mouse'
+7,6,1162,487,0,0,0,52286770,8,'PixArt USB Optical Mouse'
+7,6,1160,485,0,0,0,52286773,8,'PixArt USB Optical Mouse'
+7,6,1158,485,0,0,0,52286781,8,'PixArt USB Optical Mouse'
+7,6,1155,485,0,0,0,52286789,8,'PixArt USB Optical Mouse'
+7,6,1152,485,0,0,0,52286798,8,'PixArt USB Optical Mouse'
+7,6,1149,485,0,0,0,52286805,8,'PixArt USB Optical Mouse'
+7,6,1146,486,0,0,0,52286814,8,'PixArt USB Optical Mouse'
+7,6,1144,487,0,0,0,52286821,8,'PixArt USB Optical Mouse'
+7,6,1141,487,0,0,0,52286829,8,'PixArt USB Optical Mouse'
+7,6,1138,489,0,0,0,52286839,8,'PixArt USB Optical Mouse'
+7,6,1136,490,0,0,0,52286845,8,'PixArt USB Optical Mouse'
+7,6,1135,491,0,0,0,52286853,8,'PixArt USB Optical Mouse'
+7,6,1134,491,0,0,0,52286861,8,'PixArt USB Optical Mouse'
+7,6,1131,492,0,0,0,52286876,8,'PixArt USB Optical Mouse'
+7,6,1130,493,0,0,0,52286877,8,'PixArt USB Optical Mouse'
+7,6,1128,494,0,0,0,52286885,8,'PixArt USB Optical Mouse'
+7,6,1126,496,0,0,0,52286894,8,'PixArt USB Optical Mouse'
+7,6,1123,498,0,0,0,52286901,8,'PixArt USB Optical Mouse'
+7,6,1120,499,0,0,0,52286909,8,'PixArt USB Optical Mouse'
+7,6,1118,501,0,0,0,52286917,8,'PixArt USB Optical Mouse'
+7,6,1116,501,0,0,0,52286934,8,'PixArt USB Optical Mouse'
+7,6,1112,502,0,0,0,52286934,8,'PixArt USB Optical Mouse'
+7,6,1110,503,0,0,0,52286947,8,'PixArt USB Optical Mouse'
+7,6,1107,503,0,0,0,52286954,8,'PixArt USB Optical Mouse'
+7,6,1105,503,0,0,0,52286957,8,'PixArt USB Optical Mouse'
+7,6,1103,505,0,0,0,52286965,8,'PixArt USB Optical Mouse'
+7,6,1101,505,0,0,0,52286973,8,'PixArt USB Optical Mouse'
+7,6,1099,505,0,0,0,52286981,8,'PixArt USB Optical Mouse'
+7,6,1096,506,0,0,0,52286989,8,'PixArt USB Optical Mouse'
+7,6,1095,506,0,0,0,52287005,8,'PixArt USB Optical Mouse'
+7,6,1093,507,0,0,0,52287005,8,'PixArt USB Optical Mouse'
+7,6,1091,507,0,0,0,52287020,8,'PixArt USB Optical Mouse'
+7,6,1089,507,0,0,0,52287036,8,'PixArt USB Optical Mouse'
+7,6,1087,508,0,0,0,52287036,8,'PixArt USB Optical Mouse'
+7,6,1085,508,0,0,0,52287037,8,'PixArt USB Optical Mouse'
+7,6,1083,510,0,0,0,52287049,8,'PixArt USB Optical Mouse'
+7,6,1081,511,0,0,0,52287057,8,'PixArt USB Optical Mouse'
+7,6,1080,511,0,0,0,52287063,8,'PixArt USB Optical Mouse'
+7,6,1077,512,0,0,0,52287069,8,'PixArt USB Optical Mouse'
+7,6,1076,512,0,0,0,52287078,8,'PixArt USB Optical Mouse'
+7,6,1075,512,0,0,0,52287102,8,'PixArt USB Optical Mouse'
+7,6,1074,513,0,0,0,52287102,8,'PixArt USB Optical Mouse'
+7,6,1071,513,0,0,0,52287102,8,'PixArt USB Optical Mouse'
+7,6,1069,515,0,0,0,52287114,8,'PixArt USB Optical Mouse'
+7,6,1067,515,0,0,0,52287121,8,'PixArt USB Optical Mouse'
+7,6,1065,515,0,0,0,52287133,8,'PixArt USB Optical Mouse'
+7,6,1063,515,0,0,0,52287133,8,'PixArt USB Optical Mouse'
+7,6,1060,515,0,0,0,52287155,8,'PixArt USB Optical Mouse'
+7,6,1057,516,0,0,0,52287155,8,'PixArt USB Optical Mouse'
+7,6,1055,516,0,0,0,52287159,8,'PixArt USB Optical Mouse'
+7,6,1052,516,0,0,0,52287170,8,'PixArt USB Optical Mouse'
+7,6,1051,516,0,0,0,52287185,8,'PixArt USB Optical Mouse'
+7,6,1049,516,0,0,0,52287185,8,'PixArt USB Optical Mouse'
+7,6,1046,516,0,0,0,52287189,8,'PixArt USB Optical Mouse'
+7,6,1044,516,0,0,0,52287197,8,'PixArt USB Optical Mouse'
+7,6,1042,516,0,0,0,52287221,8,'PixArt USB Optical Mouse'
+7,6,1039,517,0,0,0,52287222,8,'PixArt USB Optical Mouse'
+7,6,1037,517,0,0,0,52287222,8,'PixArt USB Optical Mouse'
+7,6,1035,518,0,0,0,52287237,8,'PixArt USB Optical Mouse'
+7,6,1034,518,0,0,0,52287237,8,'PixArt USB Optical Mouse'
+7,6,1031,518,0,0,0,52287247,8,'PixArt USB Optical Mouse'
+7,6,1029,519,0,0,0,52287259,8,'PixArt USB Optical Mouse'
+7,6,1027,520,0,0,0,52287292,8,'PixArt USB Optical Mouse'
+7,6,1025,521,0,0,0,52287292,8,'PixArt USB Optical Mouse'
+7,6,1024,521,0,0,0,52287292,8,'PixArt USB Optical Mouse'
+7,2,0,0,0,65,0,52287680,9,Microsoft Natural® Ergonomic Keyboard 4000
+6,2,0,0,0,65,0,52287680,3,Virtual core keyboard
+7,3,0,0,0,65,0,52287845,9,Microsoft Natural® Ergonomic Keyboard 4000
+6,3,0,0,0,65,0,52287845,3,Virtual core keyboard
+7,2,0,0,0,95,0,52290173,9,Microsoft Natural® Ergonomic Keyboard 4000
+6,2,0,0,0,95,0,52290173,3,Virtual core keyboard
+7,3,0,0,0,95,0,52290311,9,Microsoft Natural® Ergonomic Keyboard 4000
+6,3,0,0,0,95,0,52290311,3,Virtual core keyboard
+7,6,1022,521,0,0,0,52291341,8,'PixArt USB Optical Mouse'
+7,6,1019,523,0,0,0,52291350,8,'PixArt USB Optical Mouse'
+7,6,1017,525,0,0,0,52291357,8,'PixArt USB Optical Mouse'
+7,6,1015,527,0,0,0,52291374,8,'PixArt USB Optical Mouse'
+7,6,1012,530,0,0,0,52291375,8,'PixArt USB Optical Mouse'
+7,6,1010,533,0,0,0,52291407,8,'PixArt USB Optical Mouse'
+7,6,1010,534,0,0,0,52291407,8,'PixArt USB Optical Mouse'
+7,6,1009,535,0,0,0,52291407,8,'PixArt USB Optical Mouse'
+7,6,1007,537,0,0,0,52291407,8,'PixArt USB Optical Mouse'
+7,6,1006,538,0,0,0,52291414,8,'PixArt USB Optical Mouse'
+7,6,1004,541,0,0,0,52291429,8,'PixArt USB Optical Mouse'
+7,6,1002,544,0,0,0,52291446,8,'PixArt USB Optical Mouse'
+7,6,1001,546,0,0,0,52291447,8,'PixArt USB Optical Mouse'
+7,6,999,550,0,0,0,52291459,8,'PixArt USB Optical Mouse'
+7,6,998,554,0,0,0,52291462,8,'PixArt USB Optical Mouse'
+7,6,994,562,0,0,0,52291474,8,'PixArt USB Optical Mouse'
+7,6,993,567,0,0,0,52291501,8,'PixArt USB Optical Mouse'
+7,6,992,573,0,0,0,52291501,8,'PixArt USB Optical Mouse'
+7,6,992,577,0,0,0,52291501,8,'PixArt USB Optical Mouse'
+7,6,992,581,0,0,0,52291501,8,'PixArt USB Optical Mouse'
+7,6,991,585,0,0,0,52291510,8,'PixArt USB Optical Mouse'
+7,6,990,587,0,0,0,52291523,8,'PixArt USB Optical Mouse'
+7,6,989,591,0,0,0,52291529,8,'PixArt USB Optical Mouse'
+7,6,988,596,0,0,0,52291541,8,'PixArt USB Optical Mouse'
+7,6,987,600,0,0,0,52291547,8,'PixArt USB Optical Mouse'
+7,6,984,604,0,0,0,52291551,8,'PixArt USB Optical Mouse'
+7,6,982,610,0,0,0,52291558,8,'PixArt USB Optical Mouse'
+7,6,981,614,0,0,0,52291571,8,'PixArt USB Optical Mouse'
+7,6,977,621,0,0,0,52291575,8,'PixArt USB Optical Mouse'
+7,6,975,626,0,0,0,52291585,8,'PixArt USB Optical Mouse'
+7,6,971,631,0,0,0,52291590,8,'PixArt USB Optical Mouse'
+7,6,969,634,0,0,0,52291598,8,'PixArt USB Optical Mouse'
+7,6,965,637,0,0,0,52291613,8,'PixArt USB Optical Mouse'
+7,6,963,639,0,0,0,52291613,8,'PixArt USB Optical Mouse'
+7,6,960,643,0,0,0,52291630,8,'PixArt USB Optical Mouse'
+7,6,959,645,0,0,0,52291639,8,'PixArt USB Optical Mouse'
+7,6,958,647,0,0,0,52291649,8,'PixArt USB Optical Mouse'
+7,6,958,649,0,0,0,52291653,8,'PixArt USB Optical Mouse'
+7,6,956,651,0,0,0,52291669,8,'PixArt USB Optical Mouse'
+7,6,955,653,0,0,0,52291695,8,'PixArt USB Optical Mouse'
+7,6,954,655,0,0,0,52291695,8,'PixArt USB Optical Mouse'
+7,6,953,658,0,0,0,52291703,8,'PixArt USB Optical Mouse'
+7,6,951,660,0,0,0,52291709,8,'PixArt USB Optical Mouse'
+7,6,950,661,0,0,0,52291718,8,'PixArt USB Optical Mouse'
+7,6,947,664,0,0,0,52291734,8,'PixArt USB Optical Mouse'
+7,6,942,669,0,0,0,52291734,8,'PixArt USB Optical Mouse'
+7,6,937,671,0,0,0,52291744,8,'PixArt USB Optical Mouse'
+7,6,935,675,0,0,0,52291754,8,'PixArt USB Optical Mouse'
+7,6,930,678,0,0,0,52291763,8,'PixArt USB Optical Mouse'
+7,6,925,682,0,0,0,52291765,8,'PixArt USB Optical Mouse'
+7,6,920,685,0,0,0,52291777,8,'PixArt USB Optical Mouse'
+7,6,918,688,0,0,0,52291784,8,'PixArt USB Optical Mouse'
+7,6,915,692,0,0,0,52291794,8,'PixArt USB Optical Mouse'
+7,6,914,693,0,0,0,52291800,8,'PixArt USB Optical Mouse'
+7,6,910,696,0,0,0,52291806,8,'PixArt USB Optical Mouse'
+7,6,910,697,0,0,0,52291813,8,'PixArt USB Optical Mouse'
+7,6,909,698,0,0,0,52291911,8,'PixArt USB Optical Mouse'
+7,6,908,699,0,0,0,52291911,8,'PixArt USB Optical Mouse'
+7,6,908,701,0,0,0,52291997,8,'PixArt USB Optical Mouse'
+7,6,908,702,0,0,0,52292011,8,'PixArt USB Optical Mouse'
+7,6,908,703,0,0,0,52292030,8,'PixArt USB Optical Mouse'
+7,6,906,705,0,0,0,52292045,8,'PixArt USB Optical Mouse'
+7,6,906,706,0,0,0,52292061,8,'PixArt USB Optical Mouse'
+7,6,905,707,0,0,0,52292341,8,'PixArt USB Optical Mouse'
+7,6,905,708,0,0,0,52292351,8,'PixArt USB Optical Mouse'
+7,6,905,711,0,0,0,52292358,8,'PixArt USB Optical Mouse'
+7,6,904,712,0,0,0,52292373,8,'PixArt USB Optical Mouse'
+7,6,904,713,0,0,0,52292381,8,'PixArt USB Optical Mouse'
+7,6,904,715,0,0,0,52292389,8,'PixArt USB Optical Mouse'
+7,6,904,717,0,0,0,52292397,8,'PixArt USB Optical Mouse'
+7,6,904,718,0,0,0,52292407,8,'PixArt USB Optical Mouse'
+7,6,904,721,0,0,0,52292413,8,'PixArt USB Optical Mouse'
+7,6,904,722,0,0,0,52292425,8,'PixArt USB Optical Mouse'
+7,6,904,725,0,0,0,52292430,8,'PixArt USB Optical Mouse'
+7,6,904,727,0,0,0,52292437,8,'PixArt USB Optical Mouse'
+7,6,904,730,0,0,0,52292445,8,'PixArt USB Optical Mouse'
+7,6,906,733,0,0,0,52292453,8,'PixArt USB Optical Mouse'
+7,6,906,736,0,0,0,52292462,8,'PixArt USB Optical Mouse'
+7,6,907,739,0,0,0,52292469,8,'PixArt USB Optical Mouse'
+7,6,908,742,0,0,0,52292479,8,'PixArt USB Optical Mouse'
+7,6,909,749,0,0,0,52292486,8,'PixArt USB Optical Mouse'
+7,6,909,756,0,0,0,52292493,8,'PixArt USB Optical Mouse'
+7,6,909,760,0,0,0,52292501,8,'PixArt USB Optical Mouse'
+7,6,909,766,0,0,0,52292509,8,'PixArt USB Optical Mouse'
+7,6,909,772,0,0,0,52292518,8,'PixArt USB Optical Mouse'
+7,6,913,781,0,0,0,52292525,8,'PixArt USB Optical Mouse'
+7,6,913,789,0,0,0,52292534,8,'PixArt USB Optical Mouse'
+7,6,913,794,0,0,0,52292541,8,'PixArt USB Optical Mouse'
+7,6,913,800,0,0,0,52292549,8,'PixArt USB Optical Mouse'
+7,6,913,806,0,0,0,52292557,8,'PixArt USB Optical Mouse'
+7,6,913,813,0,0,0,52292565,8,'PixArt USB Optical Mouse'
+7,6,913,817,0,0,0,52292574,8,'PixArt USB Optical Mouse'
+7,6,913,823,0,0,0,52292581,8,'PixArt USB Optical Mouse'
+7,6,913,829,0,0,0,52292590,8,'PixArt USB Optical Mouse'
+7,6,913,836,0,0,0,52292597,8,'PixArt USB Optical Mouse'
+7,6,913,842,0,0,0,52292605,8,'PixArt USB Optical Mouse'
+7,6,913,848,0,0,0,52292613,8,'PixArt USB Optical Mouse'
+7,6,913,854,0,0,0,52292621,8,'PixArt USB Optical Mouse'
+7,6,913,861,0,0,0,52292629,8,'PixArt USB Optical Mouse'
+7,6,913,868,0,0,0,52292637,8,'PixArt USB Optical Mouse'
+7,6,913,875,0,0,0,52292645,8,'PixArt USB Optical Mouse'
+7,6,913,880,0,0,0,52292653,8,'PixArt USB Optical Mouse'
+7,6,913,886,0,0,0,52292664,8,'PixArt USB Optical Mouse'
+7,6,913,892,0,0,0,52292670,8,'PixArt USB Optical Mouse'
+7,6,912,897,0,0,0,52292677,8,'PixArt USB Optical Mouse'
+7,6,912,901,0,0,0,52292691,8,'PixArt USB Optical Mouse'
+7,6,912,903,0,0,0,52292697,8,'PixArt USB Optical Mouse'
+7,6,912,907,0,0,0,52292701,8,'PixArt USB Optical Mouse'
+7,6,912,909,0,0,0,52292709,8,'PixArt USB Optical Mouse'
+7,6,911,912,0,0,0,52292718,8,'PixArt USB Optical Mouse'
+7,6,911,914,0,0,0,52292725,8,'PixArt USB Optical Mouse'
+7,6,911,916,0,0,0,52292733,8,'PixArt USB Optical Mouse'
+7,6,911,918,0,0,0,52292741,8,'PixArt USB Optical Mouse'
+7,6,911,921,0,0,0,52292750,8,'PixArt USB Optical Mouse'
+7,6,911,923,0,0,0,52292757,8,'PixArt USB Optical Mouse'
+7,6,911,927,0,0,0,52292765,8,'PixArt USB Optical Mouse'
+7,6,910,929,0,0,0,52292774,8,'PixArt USB Optical Mouse'
+7,6,910,933,0,0,0,52292782,8,'PixArt USB Optical Mouse'
+7,6,910,937,0,0,0,52292789,8,'PixArt USB Optical Mouse'
+7,6,910,940,0,0,0,52292797,8,'PixArt USB Optical Mouse'
+7,6,910,944,0,0,0,52292806,8,'PixArt USB Optical Mouse'
+7,6,910,947,0,0,0,52292814,8,'PixArt USB Optical Mouse'
+7,6,910,950,0,0,0,52292821,8,'PixArt USB Optical Mouse'
+7,6,910,952,0,0,0,52292830,8,'PixArt USB Optical Mouse'
+7,6,910,954,0,0,0,52292838,8,'PixArt USB Optical Mouse'
+7,6,910,957,0,0,0,52292847,8,'PixArt USB Optical Mouse'
+7,6,910,959,0,0,0,52292853,8,'PixArt USB Optical Mouse'
+7,6,910,963,0,0,0,52292861,8,'PixArt USB Optical Mouse'
+7,6,910,965,0,0,0,52292869,8,'PixArt USB Optical Mouse'
+7,6,910,968,0,0,0,52292877,8,'PixArt USB Optical Mouse'
+7,6,910,972,0,0,0,52292885,8,'PixArt USB Optical Mouse'
+7,6,910,974,0,0,0,52292894,8,'PixArt USB Optical Mouse'
+7,6,910,977,0,0,0,52292901,8,'PixArt USB Optical Mouse'
+7,6,910,980,0,0,0,52292915,8,'PixArt USB Optical Mouse'
+7,6,912,985,0,0,0,52292917,8,'PixArt USB Optical Mouse'
+7,6,912,986,0,0,0,52292925,8,'PixArt USB Optical Mouse'
+7,6,912,989,0,0,0,52292933,8,'PixArt USB Optical Mouse'
+7,6,912,991,0,0,0,52292942,8,'PixArt USB Optical Mouse'
+7,6,913,994,0,0,0,52292949,8,'PixArt USB Optical Mouse'
+7,6,913,996,0,0,0,52292959,8,'PixArt USB Optical Mouse'
+7,6,913,998,0,0,0,52292965,8,'PixArt USB Optical Mouse'
+7,6,913,1000,0,0,0,52292973,8,'PixArt USB Optical Mouse'
+7,6,913,1003,0,0,0,52292983,8,'PixArt USB Optical Mouse'
+7,6,913,1004,0,0,0,52292990,8,'PixArt USB Optical Mouse'
+7,6,914,1007,0,0,0,52292997,8,'PixArt USB Optical Mouse'
+7,6,914,1009,0,0,0,52293005,8,'PixArt USB Optical Mouse'
+7,6,914,1011,0,0,0,52293014,8,'PixArt USB Optical Mouse'
+7,6,914,1013,0,0,0,52293022,8,'PixArt USB Optical Mouse'
+7,6,914,1015,0,0,0,52293029,8,'PixArt USB Optical Mouse'
+7,6,914,1018,0,0,0,52293037,8,'PixArt USB Optical Mouse'
+7,6,914,1019,0,0,0,52293049,8,'PixArt USB Optical Mouse'
+7,6,914,1021,0,0,0,52293062,8,'PixArt USB Optical Mouse'
+7,6,914,1023,0,0,0,52293074,8,'PixArt USB Optical Mouse'
+7,6,914,1024,0,0,0,52293090,8,'PixArt USB Optical Mouse'
+7,6,912,1027,0,0,0,52293095,8,'PixArt USB Optical Mouse'
+7,6,912,1028,0,0,0,52293114,8,'PixArt USB Optical Mouse'
+7,6,912,1029,0,0,0,52293126,8,'PixArt USB Optical Mouse'
+7,6,912,1029,0,0,0,52293133,8,'PixArt USB Optical Mouse'
+7,6,912,1030,0,0,0,52293153,8,'PixArt USB Optical Mouse'
+7,6,911,1033,0,0,0,52293185,8,'PixArt USB Optical Mouse'
+7,6,910,1034,0,0,0,52293341,8,'PixArt USB Optical Mouse'
+7,6,910,1037,0,0,0,52293352,8,'PixArt USB Optical Mouse'
+7,6,910,1039,0,0,0,52293358,8,'PixArt USB Optical Mouse'
+7,6,910,1042,0,0,0,52293372,8,'PixArt USB Optical Mouse'
+7,6,910,1044,0,0,0,52293376,8,'PixArt USB Optical Mouse'
+7,6,910,1046,0,0,0,52293387,8,'PixArt USB Optical Mouse'
+7,6,910,1048,0,0,0,52293401,8,'PixArt USB Optical Mouse'
+7,6,910,1049,0,0,0,52293455,8,'PixArt USB Optical Mouse'
+7,6,909,1050,0,0,0,52293485,8,'PixArt USB Optical Mouse'
+7,6,909,1050,0,0,0,52293697,8,'PixArt USB Optical Mouse'
+7,6,908,1050,0,0,0,52293703,8,'PixArt USB Optical Mouse'
+7,6,907,1050,0,0,0,52293709,8,'PixArt USB Optical Mouse'
+7,6,905,1050,0,0,0,52293717,8,'PixArt USB Optical Mouse'
+7,6,904,1050,0,0,0,52293729,8,'PixArt USB Optical Mouse'
+7,6,903,1050,0,0,0,52293733,8,'PixArt USB Optical Mouse'
+7,6,902,1050,0,0,0,52293742,8,'PixArt USB Optical Mouse'
+7,6,900,1050,0,0,0,52293749,8,'PixArt USB Optical Mouse'
+7,6,899,1050,0,0,0,52293759,8,'PixArt USB Optical Mouse'
+7,6,898,1050,0,0,0,52293766,8,'PixArt USB Optical Mouse'
+7,6,897,1050,0,0,0,52293774,8,'PixArt USB Optical Mouse'
+7,6,895,1050,0,0,0,52293781,8,'PixArt USB Optical Mouse'
+7,6,894,1050,0,0,0,52293798,8,'PixArt USB Optical Mouse'
+7,6,893,1050,0,0,0,52293819,8,'PixArt USB Optical Mouse'
+7,6,892,1050,0,0,0,52293825,8,'PixArt USB Optical Mouse'
+7,6,890,1050,0,0,0,52293833,8,'PixArt USB Optical Mouse'
+7,6,889,1049,0,0,0,52293859,8,'PixArt USB Optical Mouse'
+7,6,888,1049,0,0,0,52293872,8,'PixArt USB Optical Mouse'
+7,6,887,1049,0,0,0,52293873,8,'PixArt USB Optical Mouse'
+7,6,885,1049,0,0,0,52293891,8,'PixArt USB Optical Mouse'
+7,6,883,1048,0,0,0,52293896,8,'PixArt USB Optical Mouse'
+7,6,882,1047,0,0,0,52293933,8,'PixArt USB Optical Mouse'
+7,6,880,1047,0,0,0,52293934,8,'PixArt USB Optical Mouse'
+7,6,879,1047,0,0,0,52293953,8,'PixArt USB Optical Mouse'
+7,6,878,1047,0,0,0,52293953,8,'PixArt USB Optical Mouse'
+7,6,877,1047,0,0,0,52293999,8,'PixArt USB Optical Mouse'
+7,6,875,1047,0,0,0,52293999,8,'PixArt USB Optical Mouse'
+7,6,873,1046,0,0,0,52293999,8,'PixArt USB Optical Mouse'
+7,6,872,1046,0,0,0,52293999,8,'PixArt USB Optical Mouse'
+7,6,870,1046,0,0,0,52293999,8,'PixArt USB Optical Mouse'
+7,6,869,1046,0,0,0,52293999,8,'PixArt USB Optical Mouse'
+7,6,868,1046,0,0,0,52294020,8,'PixArt USB Optical Mouse'
+7,6,867,1046,0,0,0,52294020,8,'PixArt USB Optical Mouse'
+7,6,865,1046,0,0,0,52294022,8,'PixArt USB Optical Mouse'
+7,6,864,1046,0,0,0,52294047,8,'PixArt USB Optical Mouse'
+7,6,863,1046,0,0,0,52294048,8,'PixArt USB Optical Mouse'
+7,6,862,1045,0,0,0,52294068,8,'PixArt USB Optical Mouse'
+7,6,860,1045,0,0,0,52294068,8,'PixArt USB Optical Mouse'
+7,6,859,1045,0,0,0,52294100,8,'PixArt USB Optical Mouse'
+7,6,858,1045,0,0,0,52294100,8,'PixArt USB Optical Mouse'
+7,6,857,1045,0,0,0,52294101,8,'PixArt USB Optical Mouse'
+7,6,855,1044,0,0,0,52294221,8,'PixArt USB Optical Mouse'
+7,6,854,1044,0,0,0,52294235,8,'PixArt USB Optical Mouse'
+7,6,853,1044,0,0,0,52294238,8,'PixArt USB Optical Mouse'
+7,6,852,1044,0,0,0,52294266,8,'PixArt USB Optical Mouse'
+7,6,850,1044,0,0,0,52294266,8,'PixArt USB Optical Mouse'
+7,6,849,1044,0,0,0,52294269,8,'PixArt USB Optical Mouse'
+7,6,848,1044,0,0,0,52294279,8,'PixArt USB Optical Mouse'
+7,6,847,1044,0,0,0,52294293,8,'PixArt USB Optical Mouse'
+7,6,845,1044,0,0,0,52294310,8,'PixArt USB Optical Mouse'
+7,6,844,1044,0,0,0,52294319,8,'PixArt USB Optical Mouse'
+7,6,843,1044,0,0,0,52294333,8,'PixArt USB Optical Mouse'
+7,6,842,1044,0,0,0,52294357,8,'PixArt USB Optical Mouse'
+7,6,840,1044,0,0,0,52294374,8,'PixArt USB Optical Mouse'
+7,6,839,1044,0,0,0,52294391,8,'PixArt USB Optical Mouse'
+7,6,838,1044,0,0,0,52294408,8,'PixArt USB Optical Mouse'
+7,6,837,1044,0,0,0,52294415,8,'PixArt USB Optical Mouse'
+7,6,834,1044,0,0,0,52294421,8,'PixArt USB Optical Mouse'
+7,6,833,1044,0,0,0,52294430,8,'PixArt USB Optical Mouse'
+7,6,830,1044,0,0,0,52294438,8,'PixArt USB Optical Mouse'
+7,6,828,1044,0,0,0,52294447,8,'PixArt USB Optical Mouse'
+7,6,825,1044,0,0,0,52294454,8,'PixArt USB Optical Mouse'
+7,6,824,1044,0,0,0,52294463,8,'PixArt USB Optical Mouse'
+7,6,822,1044,0,0,0,52294473,8,'PixArt USB Optical Mouse'
+7,6,820,1044,0,0,0,52294477,8,'PixArt USB Optical Mouse'
+7,6,819,1044,0,0,0,52294485,8,'PixArt USB Optical Mouse'
+7,6,817,1044,0,0,0,52294493,8,'PixArt USB Optical Mouse'
+7,6,816,1044,0,0,0,52294501,8,'PixArt USB Optical Mouse'
+7,6,814,1044,0,0,0,52294509,8,'PixArt USB Optical Mouse'
+7,6,813,1044,0,0,0,52294517,8,'PixArt USB Optical Mouse'
+7,6,812,1044,0,0,0,52294525,8,'PixArt USB Optical Mouse'
+7,6,810,1044,0,0,0,52294533,8,'PixArt USB Optical Mouse'
+7,6,809,1044,0,0,0,52294541,8,'PixArt USB Optical Mouse'
+7,6,807,1044,0,0,0,52294549,8,'PixArt USB Optical Mouse'
+7,6,805,1044,0,0,0,52294557,8,'PixArt USB Optical Mouse'
+7,6,804,1044,0,0,0,52294565,8,'PixArt USB Optical Mouse'
+7,6,803,1044,0,0,0,52294574,8,'PixArt USB Optical Mouse'
+7,6,802,1044,0,0,0,52294581,8,'PixArt USB Optical Mouse'
+7,6,800,1044,0,0,0,52294589,8,'PixArt USB Optical Mouse'
+7,6,799,1044,0,0,0,52294605,8,'PixArt USB Optical Mouse'
+7,6,798,1044,0,0,0,52294613,8,'PixArt USB Optical Mouse'
+7,6,798,1044,0,0,0,52294621,8,'PixArt USB Optical Mouse'
+7,6,796,1044,0,0,0,52294630,8,'PixArt USB Optical Mouse'
+7,6,794,1044,0,0,0,52294637,8,'PixArt USB Optical Mouse'
+7,6,792,1045,0,0,0,52294645,8,'PixArt USB Optical Mouse'
+7,6,790,1045,0,0,0,52294662,8,'PixArt USB Optical Mouse'
+7,6,789,1045,0,0,0,52294669,8,'PixArt USB Optical Mouse'
+7,6,788,1045,0,0,0,52294686,8,'PixArt USB Optical Mouse'
+7,6,786,1045,0,0,0,52294694,8,'PixArt USB Optical Mouse'
+7,6,785,1045,0,0,0,52294709,8,'PixArt USB Optical Mouse'
+7,6,783,1046,0,0,0,52294765,8,'PixArt USB Optical Mouse'
+7,6,782,1047,0,0,0,52294797,8,'PixArt USB Optical Mouse'
+7,6,781,1047,0,0,0,52294805,8,'PixArt USB Optical Mouse'
+7,6,779,1048,0,0,0,52294827,8,'PixArt USB Optical Mouse'
+7,6,778,1049,0,0,0,52294829,8,'PixArt USB Optical Mouse'
+7,6,775,1050,0,0,0,52294839,8,'PixArt USB Optical Mouse'
+7,6,774,1051,0,0,0,52294845,8,'PixArt USB Optical Mouse'
+7,6,773,1052,0,0,0,52294865,8,'PixArt USB Optical Mouse'
+7,6,771,1052,0,0,0,52294869,8,'PixArt USB Optical Mouse'
+7,6,770,1053,0,0,0,52294886,8,'PixArt USB Optical Mouse'
+7,6,769,1054,0,0,0,52294901,8,'PixArt USB Optical Mouse'
+7,6,767,1056,0,0,0,52294910,8,'PixArt USB Optical Mouse'
+7,6,766,1056,0,0,0,52294917,8,'PixArt USB Optical Mouse'
+7,6,765,1057,0,0,0,52294926,8,'PixArt USB Optical Mouse'
+7,6,764,1057,0,0,0,52294936,8,'PixArt USB Optical Mouse'
+7,6,763,1058,0,0,0,52294942,8,'PixArt USB Optical Mouse'
+7,6,761,1058,0,0,0,52294949,8,'PixArt USB Optical Mouse'
+7,6,759,1058,0,0,0,52294957,8,'PixArt USB Optical Mouse'
+7,6,758,1058,0,0,0,52294966,8,'PixArt USB Optical Mouse'
+7,6,756,1058,0,0,0,52294973,8,'PixArt USB Optical Mouse'
+7,6,755,1059,0,0,0,52294981,8,'PixArt USB Optical Mouse'
+7,6,754,1059,0,0,0,52294997,8,'PixArt USB Optical Mouse'
+7,6,751,1059,0,0,0,52295009,8,'PixArt USB Optical Mouse'
+7,6,750,1059,0,0,0,52295014,8,'PixArt USB Optical Mouse'
+7,6,748,1059,0,0,0,52295021,8,'PixArt USB Optical Mouse'
+7,6,746,1059,0,0,0,52295029,8,'PixArt USB Optical Mouse'
+7,6,744,1059,0,0,0,52295037,8,'PixArt USB Optical Mouse'
+7,6,741,1059,0,0,0,52295046,8,'PixArt USB Optical Mouse'
+7,6,739,1059,0,0,0,52295054,8,'PixArt USB Optical Mouse'
+7,6,736,1061,0,0,0,52295065,8,'PixArt USB Optical Mouse'
+7,6,733,1061,0,0,0,52295072,8,'PixArt USB Optical Mouse'
+7,6,730,1061,0,0,0,52295079,8,'PixArt USB Optical Mouse'
+7,6,728,1062,0,0,0,52295086,8,'PixArt USB Optical Mouse'
+7,6,724,1062,0,0,0,52295096,8,'PixArt USB Optical Mouse'
+7,6,721,1062,0,0,0,52295105,8,'PixArt USB Optical Mouse'
+7,6,719,1062,0,0,0,52295110,8,'PixArt USB Optical Mouse'
+7,6,718,1062,0,0,0,52295121,8,'PixArt USB Optical Mouse'
+7,6,716,1062,0,0,0,52295126,8,'PixArt USB Optical Mouse'
+7,6,715,1062,0,0,0,52295141,8,'PixArt USB Optical Mouse'
+7,6,714,1062,0,0,0,52295149,8,'PixArt USB Optical Mouse'
+7,6,713,1062,0,0,0,52295161,8,'PixArt USB Optical Mouse'
+7,6,709,1062,0,0,0,52295169,8,'PixArt USB Optical Mouse'
+7,6,707,1062,0,0,0,52295180,8,'PixArt USB Optical Mouse'
+7,6,704,1062,0,0,0,52295190,8,'PixArt USB Optical Mouse'
+7,6,703,1061,0,0,0,52295192,8,'PixArt USB Optical Mouse'
+7,6,701,1061,0,0,0,52295201,8,'PixArt USB Optical Mouse'
+7,6,700,1060,0,0,0,52295212,8,'PixArt USB Optical Mouse'
+7,6,699,1060,0,0,0,52295217,8,'PixArt USB Optical Mouse'
+7,6,698,1060,0,0,0,52295229,8,'PixArt USB Optical Mouse'
+7,6,697,1059,0,0,0,52295239,8,'PixArt USB Optical Mouse'
+7,6,695,1059,0,0,0,52295246,8,'PixArt USB Optical Mouse'
+7,6,693,1059,0,0,0,52295253,8,'PixArt USB Optical Mouse'
+7,6,691,1059,0,0,0,52295266,8,'PixArt USB Optical Mouse'
+7,6,689,1059,0,0,0,52295274,8,'PixArt USB Optical Mouse'
+7,6,686,1059,0,0,0,52295279,8,'PixArt USB Optical Mouse'
+7,6,685,1059,0,0,0,52295293,8,'PixArt USB Optical Mouse'
+7,6,684,1059,0,0,0,52295312,8,'PixArt USB Optical Mouse'
+7,6,683,1059,0,0,0,52295334,8,'PixArt USB Optical Mouse'
+7,6,681,1059,0,0,0,52295360,8,'PixArt USB Optical Mouse'
+7,6,680,1059,0,0,0,52295382,8,'PixArt USB Optical Mouse'
+7,6,679,1059,0,0,0,52295397,8,'PixArt USB Optical Mouse'
+7,6,678,1059,0,0,0,52295407,8,'PixArt USB Optical Mouse'
+7,6,675,1058,0,0,0,52295415,8,'PixArt USB Optical Mouse'
+7,6,674,1057,0,0,0,52295430,8,'PixArt USB Optical Mouse'
+7,6,672,1056,0,0,0,52295439,8,'PixArt USB Optical Mouse'
+7,6,671,1056,0,0,0,52295453,8,'PixArt USB Optical Mouse'
+7,6,670,1056,0,0,0,52295469,8,'PixArt USB Optical Mouse'
+7,6,669,1055,0,0,0,52295512,8,'PixArt USB Optical Mouse'
+7,6,669,1055,0,0,0,52295526,8,'PixArt USB Optical Mouse'
+7,6,667,1055,0,0,0,52295551,8,'PixArt USB Optical Mouse'
+7,6,666,1055,0,0,0,52295551,8,'PixArt USB Optical Mouse'
+7,6,665,1055,0,0,0,52295559,8,'PixArt USB Optical Mouse'
+7,6,664,1055,0,0,0,52295573,8,'PixArt USB Optical Mouse'
+7,6,662,1055,0,0,0,52295590,8,'PixArt USB Optical Mouse'
+7,6,661,1055,0,0,0,52295598,8,'PixArt USB Optical Mouse'
+7,6,660,1055,0,0,0,52295606,8,'PixArt USB Optical Mouse'
+7,6,659,1055,0,0,0,52295615,8,'PixArt USB Optical Mouse'
+7,6,657,1055,0,0,0,52295622,8,'PixArt USB Optical Mouse'
+7,6,655,1055,0,0,0,52295630,8,'PixArt USB Optical Mouse'
+7,6,652,1055,0,0,0,52295638,8,'PixArt USB Optical Mouse'
+7,6,650,1055,0,0,0,52295645,8,'PixArt USB Optical Mouse'
+7,6,646,1055,0,0,0,52295653,8,'PixArt USB Optical Mouse'
+7,6,644,1055,0,0,0,52295676,8,'PixArt USB Optical Mouse'
+7,6,642,1055,0,0,0,52295697,8,'PixArt USB Optical Mouse'
+7,6,641,1055,0,0,0,52295714,8,'PixArt USB Optical Mouse'
+7,6,639,1055,0,0,0,52295717,8,'PixArt USB Optical Mouse'
+7,6,636,1055,0,0,0,52295728,8,'PixArt USB Optical Mouse'
+7,6,635,1054,0,0,0,52295736,8,'PixArt USB Optical Mouse'
+7,6,634,1054,0,0,0,52295752,8,'PixArt USB Optical Mouse'
+7,6,632,1054,0,0,0,52295752,8,'PixArt USB Optical Mouse'
+7,6,631,1054,0,0,0,52295764,8,'PixArt USB Optical Mouse'
+7,6,629,1054,0,0,0,52295781,8,'PixArt USB Optical Mouse'
+7,6,627,1054,0,0,0,52295791,8,'PixArt USB Optical Mouse'
+7,6,626,1054,0,0,0,52295807,8,'PixArt USB Optical Mouse'
+7,6,625,1054,0,0,0,52295836,8,'PixArt USB Optical Mouse'
+7,6,624,1054,0,0,0,52295855,8,'PixArt USB Optical Mouse'
+7,6,622,1054,0,0,0,52295855,8,'PixArt USB Optical Mouse'
+7,6,621,1054,0,0,0,52295855,8,'PixArt USB Optical Mouse'
+7,6,619,1054,0,0,0,52295863,8,'PixArt USB Optical Mouse'
+7,6,617,1054,0,0,0,52295874,8,'PixArt USB Optical Mouse'
+7,6,616,1054,0,0,0,52295879,8,'PixArt USB Optical Mouse'
+7,6,614,1053,0,0,0,52295890,8,'PixArt USB Optical Mouse'
+7,6,613,1052,0,0,0,52295931,8,'PixArt USB Optical Mouse'
+7,6,612,1052,0,0,0,52295943,8,'PixArt USB Optical Mouse'
+7,6,612,1052,0,0,0,52295964,8,'PixArt USB Optical Mouse'
+7,6,611,1051,0,0,0,52295965,8,'PixArt USB Optical Mouse'
+7,6,610,1051,0,0,0,52295974,8,'PixArt USB Optical Mouse'
+7,6,608,1051,0,0,0,52295974,8,'PixArt USB Optical Mouse'
+7,6,606,1050,0,0,0,52296014,8,'PixArt USB Optical Mouse'
+7,6,605,1049,0,0,0,52296014,8,'PixArt USB Optical Mouse'
+7,6,603,1049,0,0,0,52296034,8,'PixArt USB Optical Mouse'
+7,6,602,1049,0,0,0,52296034,8,'PixArt USB Optical Mouse'
+7,6,598,1049,0,0,0,52296045,8,'PixArt USB Optical Mouse'
+7,6,597,1049,0,0,0,52296048,8,'PixArt USB Optical Mouse'
+7,6,595,1048,0,0,0,52296054,8,'PixArt USB Optical Mouse'
+7,6,594,1047,0,0,0,52296062,8,'PixArt USB Optical Mouse'
+7,6,593,1047,0,0,0,52296071,8,'PixArt USB Optical Mouse'
+7,6,591,1047,0,0,0,52296080,8,'PixArt USB Optical Mouse'
+7,6,590,1047,0,0,0,52296115,8,'PixArt USB Optical Mouse'
+7,6,587,1047,0,0,0,52296116,8,'PixArt USB Optical Mouse'
+7,6,586,1047,0,0,0,52296123,8,'PixArt USB Optical Mouse'
+7,6,585,1047,0,0,0,52296213,8,'PixArt USB Optical Mouse'
+7,6,584,1046,0,0,0,52296261,8,'PixArt USB Optical Mouse'
+7,6,584,1046,0,0,0,52296285,8,'PixArt USB Optical Mouse'
+7,6,582,1046,0,0,0,52296301,8,'PixArt USB Optical Mouse'
+7,6,581,1046,0,0,0,52296317,8,'PixArt USB Optical Mouse'
+7,6,579,1046,0,0,0,52296325,8,'PixArt USB Optical Mouse'
+7,6,578,1046,0,0,0,52296333,8,'PixArt USB Optical Mouse'
+7,6,577,1046,0,0,0,52296349,8,'PixArt USB Optical Mouse'
+7,6,576,1046,0,0,0,52296421,8,'PixArt USB Optical Mouse'
+7,6,575,1046,0,0,0,52296453,8,'PixArt USB Optical Mouse'
+7,6,574,1046,0,0,0,52296478,8,'PixArt USB Optical Mouse'
+7,6,573,1045,0,0,0,52296557,8,'PixArt USB Optical Mouse'
+7,6,573,1045,0,0,0,52296581,8,'PixArt USB Optical Mouse'
+7,6,570,1045,0,0,0,52296589,8,'PixArt USB Optical Mouse'
+7,6,569,1045,0,0,0,52296597,8,'PixArt USB Optical Mouse'
+7,6,568,1045,0,0,0,52296606,8,'PixArt USB Optical Mouse'
+7,6,566,1045,0,0,0,52296625,8,'PixArt USB Optical Mouse'
+7,6,564,1045,0,0,0,52296637,8,'PixArt USB Optical Mouse'
+7,6,563,1045,0,0,0,52296661,8,'PixArt USB Optical Mouse'
+7,6,561,1045,0,0,0,52296681,8,'PixArt USB Optical Mouse'
+7,6,560,1045,0,0,0,52296686,8,'PixArt USB Optical Mouse'
+7,6,559,1045,0,0,0,52296696,8,'PixArt USB Optical Mouse'
+7,6,558,1044,0,0,0,52296720,8,'PixArt USB Optical Mouse'
+7,6,556,1044,0,0,0,52296997,8,'PixArt USB Optical Mouse'
+7,6,555,1044,0,0,0,52297006,8,'PixArt USB Optical Mouse'
+7,6,555,1043,0,0,0,52297013,8,'PixArt USB Optical Mouse'
+7,6,555,1042,0,0,0,52297024,8,'PixArt USB Optical Mouse'
+7,6,555,1041,0,0,0,52297029,8,'PixArt USB Optical Mouse'
+7,6,551,1036,0,0,0,52297040,8,'PixArt USB Optical Mouse'
+7,6,544,1029,0,0,0,52297048,8,'PixArt USB Optical Mouse'
+7,6,538,1023,0,0,0,52297053,8,'PixArt USB Optical Mouse'
+7,6,534,1018,0,0,0,52297065,8,'PixArt USB Optical Mouse'
+7,6,532,1016,0,0,0,52297071,8,'PixArt USB Optical Mouse'
+7,6,530,1012,0,0,0,52297082,8,'PixArt USB Optical Mouse'
+7,6,529,1009,0,0,0,52297088,8,'PixArt USB Optical Mouse'
+7,6,528,1006,0,0,0,52297093,8,'PixArt USB Optical Mouse'
+7,6,527,1001,0,0,0,52297101,8,'PixArt USB Optical Mouse'
+7,6,524,998,0,0,0,52297109,8,'PixArt USB Optical Mouse'
+7,6,523,996,0,0,0,52297117,8,'PixArt USB Optical Mouse'
+7,6,522,992,0,0,0,52297126,8,'PixArt USB Optical Mouse'
+7,6,521,989,0,0,0,52297133,8,'PixArt USB Optical Mouse'
+7,6,519,983,0,0,0,52297141,8,'PixArt USB Optical Mouse'
+7,6,519,978,0,0,0,52297149,8,'PixArt USB Optical Mouse'
+7,6,518,972,0,0,0,52297157,8,'PixArt USB Optical Mouse'
+7,6,517,964,0,0,0,52297165,8,'PixArt USB Optical Mouse'
+7,6,517,954,0,0,0,52297173,8,'PixArt USB Optical Mouse'
+7,6,517,945,0,0,0,52297181,8,'PixArt USB Optical Mouse'
+7,6,517,935,0,0,0,52297189,8,'PixArt USB Optical Mouse'
+7,6,517,922,0,0,0,52297198,8,'PixArt USB Optical Mouse'
+7,6,517,911,0,0,0,52297205,8,'PixArt USB Optical Mouse'
+7,6,517,901,0,0,0,52297214,8,'PixArt USB Optical Mouse'
+7,6,517,894,0,0,0,52297221,8,'PixArt USB Optical Mouse'
+7,6,519,886,0,0,0,52297229,8,'PixArt USB Optical Mouse'
+7,6,521,877,0,0,0,52297237,8,'PixArt USB Optical Mouse'
+7,6,521,871,0,0,0,52297245,8,'PixArt USB Optical Mouse'
+7,6,522,864,0,0,0,52297254,8,'PixArt USB Optical Mouse'
+7,6,523,858,0,0,0,52297262,8,'PixArt USB Optical Mouse'
+7,6,526,850,0,0,0,52297269,8,'PixArt USB Optical Mouse'
+7,6,527,843,0,0,0,52297278,8,'PixArt USB Optical Mouse'
+7,6,528,837,0,0,0,52297285,8,'PixArt USB Optical Mouse'
+7,6,531,831,0,0,0,52297293,8,'PixArt USB Optical Mouse'
+7,6,534,824,0,0,0,52297301,8,'PixArt USB Optical Mouse'
+7,6,535,819,0,0,0,52297309,8,'PixArt USB Optical Mouse'
+7,6,539,811,0,0,0,52297317,8,'PixArt USB Optical Mouse'
+7,6,540,808,0,0,0,52297325,8,'PixArt USB Optical Mouse'
+7,6,542,802,0,0,0,52297333,8,'PixArt USB Optical Mouse'
+7,6,545,797,0,0,0,52297341,8,'PixArt USB Optical Mouse'
+7,6,545,795,0,0,0,52297349,8,'PixArt USB Optical Mouse'
+7,6,545,791,0,0,0,52297357,8,'PixArt USB Optical Mouse'
+7,6,546,790,0,0,0,52297366,8,'PixArt USB Optical Mouse'
+7,6,547,787,0,0,0,52297373,8,'PixArt USB Optical Mouse'
+7,6,547,786,0,0,0,52297381,8,'PixArt USB Optical Mouse'
+7,6,548,784,0,0,0,52297389,8,'PixArt USB Optical Mouse'
+7,6,550,780,0,0,0,52297400,8,'PixArt USB Optical Mouse'
+7,6,551,779,0,0,0,52297406,8,'PixArt USB Optical Mouse'
+7,6,553,774,0,0,0,52297413,8,'PixArt USB Optical Mouse'
+7,6,557,770,0,0,0,52297421,8,'PixArt USB Optical Mouse'
+7,6,559,765,0,0,0,52297430,8,'PixArt USB Optical Mouse'
+7,6,564,760,0,0,0,52297437,8,'PixArt USB Optical Mouse'
+7,6,569,754,0,0,0,52297445,8,'PixArt USB Optical Mouse'
+7,6,575,747,0,0,0,52297454,8,'PixArt USB Optical Mouse'
+7,6,577,744,0,0,0,52297461,8,'PixArt USB Optical Mouse'
+7,6,584,736,0,0,0,52297470,8,'PixArt USB Optical Mouse'
+7,6,588,731,0,0,0,52297477,8,'PixArt USB Optical Mouse'
+7,6,595,726,0,0,0,52297485,8,'PixArt USB Optical Mouse'
+7,6,600,721,0,0,0,52297494,8,'PixArt USB Optical Mouse'
+7,6,604,716,0,0,0,52297501,8,'PixArt USB Optical Mouse'
+7,6,608,709,0,0,0,52297512,8,'PixArt USB Optical Mouse'
+7,6,611,704,0,0,0,52297517,8,'PixArt USB Optical Mouse'
+7,6,615,696,0,0,0,52297525,8,'PixArt USB Optical Mouse'
+7,6,616,692,0,0,0,52297533,8,'PixArt USB Optical Mouse'
+7,6,618,688,0,0,0,52297541,8,'PixArt USB Optical Mouse'
+7,6,622,680,0,0,0,52297549,8,'PixArt USB Optical Mouse'
+7,6,628,669,0,0,0,52297557,8,'PixArt USB Optical Mouse'
+7,6,631,662,0,0,0,52297565,8,'PixArt USB Optical Mouse'
+7,6,637,653,0,0,0,52297574,8,'PixArt USB Optical Mouse'
+7,6,643,642,0,0,0,52297581,8,'PixArt USB Optical Mouse'
+7,6,646,634,0,0,0,52297590,8,'PixArt USB Optical Mouse'
+7,6,650,629,0,0,0,52297597,8,'PixArt USB Optical Mouse'
+7,6,653,624,0,0,0,52297605,8,'PixArt USB Optical Mouse'
+7,6,656,618,0,0,0,52297614,8,'PixArt USB Optical Mouse'
+7,6,659,613,0,0,0,52297626,8,'PixArt USB Optical Mouse'
+7,6,660,610,0,0,0,52297633,8,'PixArt USB Optical Mouse'
+7,6,661,608,0,0,0,52297641,8,'PixArt USB Optical Mouse'
+7,6,662,607,0,0,0,52297648,8,'PixArt USB Optical Mouse'
+7,6,663,606,0,0,0,52297667,8,'PixArt USB Optical Mouse'
+7,6,663,605,0,0,0,52297680,8,'PixArt USB Optical Mouse'
+7,6,664,604,0,0,0,52297680,8,'PixArt USB Optical Mouse'
+7,6,665,603,0,0,0,52297700,8,'PixArt USB Optical Mouse'
+7,6,667,601,0,0,0,52297701,8,'PixArt USB Optical Mouse'
+7,6,668,600,0,0,0,52297706,8,'PixArt USB Optical Mouse'
+7,6,670,598,0,0,0,52297713,8,'PixArt USB Optical Mouse'
+7,6,672,596,0,0,0,52297717,8,'PixArt USB Optical Mouse'
+7,6,674,595,0,0,0,52297730,8,'PixArt USB Optical Mouse'
+7,6,676,593,0,0,0,52297746,8,'PixArt USB Optical Mouse'
+7,6,678,591,0,0,0,52297746,8,'PixArt USB Optical Mouse'
+7,6,679,590,0,0,0,52297750,8,'PixArt USB Optical Mouse'
+7,6,680,588,0,0,0,52297757,8,'PixArt USB Optical Mouse'
+7,6,682,585,0,0,0,52297766,8,'PixArt USB Optical Mouse'
+7,6,683,584,0,0,0,52297774,8,'PixArt USB Optical Mouse'
+7,6,685,581,0,0,0,52297781,8,'PixArt USB Optical Mouse'
+7,6,687,577,0,0,0,52297791,8,'PixArt USB Optical Mouse'
+7,6,689,575,0,0,0,52297799,8,'PixArt USB Optical Mouse'
+7,6,694,571,0,0,0,52297807,8,'PixArt USB Optical Mouse'
+7,6,695,569,0,0,0,52297814,8,'PixArt USB Optical Mouse'
+7,6,698,565,0,0,0,52297822,8,'PixArt USB Optical Mouse'
+7,6,701,562,0,0,0,52297831,8,'PixArt USB Optical Mouse'
+7,6,704,560,0,0,0,52297837,8,'PixArt USB Optical Mouse'
+7,6,707,557,0,0,0,52297850,8,'PixArt USB Optical Mouse'
+7,6,709,555,0,0,0,52297858,8,'PixArt USB Optical Mouse'
+7,6,710,554,0,0,0,52297864,8,'PixArt USB Optical Mouse'
+7,6,711,553,0,0,0,52297875,8,'PixArt USB Optical Mouse'
+7,6,712,552,0,0,0,52297877,8,'PixArt USB Optical Mouse'
+7,6,714,549,0,0,0,52297890,8,'PixArt USB Optical Mouse'
+7,6,714,548,0,0,0,52297911,8,'PixArt USB Optical Mouse'
