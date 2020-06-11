@@ -9,3 +9,9 @@
 
 4.) then create seccond .sh script in automation_commands that replays the cnee file
 	this is what will get called from python
+
+
+5.) Or just build shortcut things with this
+
+https://github.com/galaktor/gostwriter/blob/master/demo/demo.go
+
