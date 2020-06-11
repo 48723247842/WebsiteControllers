@@ -1,0 +1,10 @@
+#!/bin/bash
+/usr/bin/google-chrome-stable --password-store=basic \
+--remote-debugging-port=9222 \
+--noerrordialogs --kiosk --app=https://google.com --disable-infobars
+
+/usr/bin/google-chrome-stable --password-store=basic --remote-debugging-port=9222 --noerrordialogs --kiosk --disable-infobars
+
+
+
+cat commands/chrome_start | xclip -selection clipboard

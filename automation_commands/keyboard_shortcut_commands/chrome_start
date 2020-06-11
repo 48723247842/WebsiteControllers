@@ -1,0 +1,8 @@
+#!/bin/bash
+# https://peter.sh/experiments/chromium-command-line-switches/#load-extension
+URL="https://www.disneyplus.com/video/e85916bf-5b05-4414-978d-a8c797a7d0c2"
+/usr/bin/google-chrome-stable --password-store=basic \
+--remote-debugging-port=9222 \
+--noerrordialogs --disable-infobars \
+--start-fullscreen --kiosk --app=$URL \
+&& exit

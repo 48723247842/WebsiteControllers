@@ -36,8 +36,13 @@ var time_string_oberver = false;
 var last_update_time = "00:00:00";
 var current_time = "00:00:00";
 var time_remaining = "00:00:00";
+var current_time_date = false;
+var time_remaining_date = false;
 var websocket_client = false;
 var should_be_playing = false;
+var TIME_POOL = [];
+var playback_state = "stopped";
+var told_server_of_first_play = false;
 
 // var svg_buttton_click_on_active = false;
 
@@ -68,7 +73,8 @@ function start_websocket_client() {
 				channel: "disney_plus" ,
 				message: "manual_time_update" ,
 				current_time: current_time ,
-				time_remaining: time_remaining
+				time_remaining: time_remaining ,
+				playback_state: playback_state
 			});
 		}
 		// else if ( recieved.message === "pause" ) {
@@ -116,43 +122,90 @@ function get_svg_buttons() {
 	return svg_buttons;
 }
 
-function on_mouse_over() {
-	console.log( "on_mouse_over()" );
-	var svg_buttons = get_svg_buttons();
-	console.log( svg_buttons );
+function get_times() {
 	var time_string_element = document.querySelector( ".time-display-label" );
+	if ( !time_string_element ) { return false; }
 	var time_string = time_string_element.innerText.split( " / " );
 	current_time = time_string[ 0 ];
 	time_remaining = time_string[ 1 ];
 	if ( current_time !== last_update_time ) {
 		last_update_time = current_time;
 	}
-	console.log( "Current Time == " + current_time );
-	console.log( "Total Time == " + time_remaining );
-	try_websocket_send({
+	var current_time_items = current_time.split( ":" );
+	switch( current_time_items.length ) {
+		case 3:
+			current_time_date = new Date( 0 , 0 , 0 , current_time_items[0] , current_time_items[1] , current_time_items[2] , 0 );
+			break;
+		case 2:
+			current_time_date = new Date( 0 , 0 , 0 , 0 , current_time_items[0] , current_time_items[1] , 0 );
+			break;
+		case 1:
+			current_time_date = new Date( 0 , 0 , 0 , 0 , 0 , current_time_items[0] , 0 );
+			break;
+		default:
+			current_time_date = new Date( 0 , 0 , 0 , 0 , 0 , 0 , 0 );
+	}
+	var time_remaining_items = time_remaining.split( ":" );
+	switch( time_remaining_items.length ) {
+		case 3:
+			time_remaining_date = new Date( 0 , 0 , 0 , time_remaining_items[0] , time_remaining_items[1] , time_remaining_items[2] , 0 );
+			break;
+		case 2:
+			time_remaining_date = new Date( 0 , 0 , 0 , 0 , time_remaining_items[0] , time_remaining_items[1] , 0 );
+			break;
+		case 1:
+			time_remaining_date = new Date( 0 , 0 , 0 , 0 , 0 , time_remaining_items[0] , 0 );
+			break;
+		default:
+			time_remaining_date = new Date( 0 , 0 , 0 , 0 , 0 , 0 , 0 );
+	}
+	TIME_POOL.push( current_time_date );
+	var seconds_difference = ( current_time_date.getTime() - TIME_POOL[0].getTime() ) / 1000;
+	if ( seconds_difference >= 1 ) {
+		playback_state = "playing";
+		TIME_POOL = [];
+	}
+	else {
+		playback_state = "paused";
+		if ( TIME_POOL.length > 100 ) {
+			TIME_POOL.shift();
+		}
+	}
+	return {
 		channel: "disney_plus" ,
 		message: "time_update" ,
 		current_time: current_time ,
-		time_remaining: time_remaining
-	});
+		time_remaining: time_remaining ,
+		playback_state: playback_state ,
+	};
+}
+
+function send_times() {
+	var times = get_times();
+	if ( !times ) { return false; }
+	if ( told_server_of_first_play === false ) {
+		if ( times["playback_state"] === "playing" ) {
+			told_server_of_first_play = true;
+			try_websocket_send({
+				channel: "disney_plus" ,
+				message: "first_play" ,
+			});
+		}
+
+	}
+	try_websocket_send( times );
+}
+
+function on_mouse_over() {
+	console.log( "on_mouse_over()" );
+	var svg_buttons = get_svg_buttons();
+	console.log( svg_buttons );
+	send_times();
+	var time_string_element = document.querySelector( ".time-display-label" );
 	time_string_oberver = new MutationObserver( function( mutations ) {
 		for ( let i = 0; i < mutations.length; ++i ) {
 			if ( mutations[ i ][ "target" ][ "parentNode" ][ "className" ] === "time-display-label" ) {
-				var time_string = mutations[ i ][ "target" ][ "data" ].split( " / " );
-				current_time = time_string[ 0 ];
-				time_remaining = time_string[ 1 ];
-				if ( current_time === last_update_time ) {
-					continue;
-				}
-				last_update_time = current_time;
-				console.log( "Observer --> Current Time == " + current_time );
-				console.log( "Observer --> Total Time == " + time_remaining );
-				try_websocket_send({
-					channel: "disney_plus" ,
-					message: "time_update" ,
-					current_time: current_time ,
-					time_remaining: time_remaining
-				});
+				send_times();
 			}
 		}
 	});
@@ -212,7 +265,16 @@ function hook_control_buttons() {
 		message: "agent_ready" ,
 	});
 	should_be_playing = true;
-}
+	setTimeout(function(){
+		if ( told_server_of_first_play === false ) {
+			console.log( "agent_never_connected" );
+			// try_websocket_send({
+			// 	channel: "disney_plus" ,
+			// 	message: "agent_never_connected" ,
+			// });
+		}
+	} , 30000 );
+ }
 
 function init() {
 	start_websocket_client();
@@ -229,5 +291,10 @@ function init() {
 	} , 2 );
 	setTimeout( function() {
 		clearInterval( READY_CHECK_INTERVAL );
-	} , 10000 );
+		console.log( "agent_never_connected" );
+		// try_websocket_send({
+		// 	channel: "disney_plus" ,
+		// 	message: "agent_never_connected" ,
+		// });
+	} , 40000 );
 })();
