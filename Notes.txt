@@ -1,0 +1,11 @@
+
+
+1.) create bash script in automation_commands/keyboard_shortcut_commands
+		that does something like launch or pkill chrome
+
+2.) keyboard settings , record keyboard shortcut and map it to bash script in step 1
+
+3.) next record a cnee series of pressing the keyboard shortcut
+
+4.) then create seccond .sh script in automation_commands that replays the cnee file
+	this is what will get called from python
